@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className="header w-full relative">
       <div className="container w-11/12 h-full mx-auto flex flex-row items-center">
-        <div className="header-left w-1/2">
+        <div className="header-left w-[50px] sm:w-1/2">
           <div className="search w-[417px] h-[40px] bg-[#F5F5F5] rounded-md hidden sm:flex flex-row items-center">
             <SearchNormal1 size={22} variant="TwoTone" color={"#787486"}className="mx-2" />
             <input type="text" className="search-input w-full mx-2 bg-transparent focus:outline-none text-[14px] leading-[16px]" placeholder="Search for anything..." />
@@ -28,8 +28,9 @@ const Header = () => {
             <HambergerMenu size={22} variant="Linear" color={"#787486"}/>
           </button>
         </div>
-        <div className="header-right w-1/2 flex flex-row justify-end h-full">
+        <div className="header-right w-full sm:w-1/2 flex flex-row justify-end h-full">
           <div className="nav-icons flex flex-row items-center justify-center h-full sm:mx-10">
+            <button><SearchNormal1 size={22} varient="Linear" color={"#787486"} className="mx-2 sm:hidden" /></button>
             <button><Calendar2 size={22} varient="Linear" color={"#787486"} className="mx-2" /></button>
             <button><MessageQuestion size={22} varient="Linear" color={"#787486"} className="mx-2" /></button>
             <button className="relative">
