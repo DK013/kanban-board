@@ -1,6 +1,6 @@
 {
-  "short_name": "Kanban Board",
-  "name": "A Kanban clone made using react and tailwind",
+  "short_name": "Kanban",
+  "name": "Kanban Board",
   "icons": [
     {
       "src": "favicon.ico",
