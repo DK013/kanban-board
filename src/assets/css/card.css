@@ -1,0 +1,15 @@
+.card-content img {
+    border-radius: 8px;
+}
+.text-mercor-yellow {
+    color: #FFA500;
+}
+.text-mercor-red-lite {
+    color: #D8727D;
+}
+.bg-mercor-yellow\/\[0\.2\] {
+    background-color: #FFA50020;
+}
+.bg-mercor-red-lite\/\[0\.2\] {
+    background-color: #D8727D20;
+}

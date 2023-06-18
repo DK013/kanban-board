@@ -1,0 +1,13 @@
+.container {
+    scroll-behavior: smooth;
+}
+.list:first-child {
+    margin-right: 5px;
+}
+.list:not(:first-child):not(:last-child) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.list:last-child {
+    margin-left: 5px;
+}

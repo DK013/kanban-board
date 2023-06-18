@@ -1,0 +1,37 @@
+.sidebar {
+    border-right: 1px solid #DBDBDB;
+}
+.sidebar.open {
+    position: absolute;
+    transition: 1s;
+    transform: translateX(0);
+}
+.sidebar-top {
+    border-bottom: 1px solid #DBDBDB;
+}
+.logo {
+    height: 88px;
+}
+.logo img {
+    max-width: 24px;
+}
+.sidebar-menu-item.active {
+    background-color: rgba(80, 48, 229, 0.08);
+}
+.sidebar-menu-item.active span.link-text, .sidebar-menu-item.active button {
+    font-weight: 600 !important;
+    color: #0D062D !important;
+}
+.sidebar-menu-link span.link-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-250px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
