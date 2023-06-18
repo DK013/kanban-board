@@ -13,6 +13,16 @@ const Page = () => {
   const dispatch = useDispatch();
   const initialState = useSelector((store) => store.listSlice);
   const allLists = initialState.allLists;
+  var timer = null;
+  const onScroll = () => {
+    if(timer !== null) {
+      clearTimeout(timer);        
+    }
+    document.querySelector('body').classList.add('scrolling');
+    timer = setTimeout(function() {
+      document.querySelector('body').classList.remove('scrolling');
+    }, 1000);
+  }
 
   const onDragEnd = (result) => {
     const { destination, source } = result;
@@ -47,7 +57,7 @@ const Page = () => {
     
 
   return (
-    <div className="container w-11/12 h-[85vh] my-5 2xl:my-10 mx-auto overflow-auto 2xl:hover:overflow-auto">
+    <div className="container w-11/12 h-[85vh] my-5 2xl:my-10 mx-auto overflow-auto" onScroll={onScroll}>
       <PageHeader />
       <FilterBar />
       <div className="w-auto sm:w-full h-auto flex flex-row justify-between my-5 2xl:my-10">
